@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LevelSixShift</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exit_button">Exit Button</string>
+    <string name="help_button">Help Button</string>
+    <string name="space_for_the_number_of_current_dollars_to_be_shown">Space for the number of current dollars to be shown</string>
+    <string name="your_chosen_presenter_for_the_slot_machine">Your chosen presenter for the slot machine</string>
+    <string name="the_slot_machine">The Slot Machine</string>
+    <string name="detracts_from_the_current_bet_by_an_amount">Detracts from the current bet by an amount</string>
+    <string name="spins_the_slot_machine">Spins the slot machine</string>
+    <string name="adds_to_the_current_bet_by_an_amount">Adds to the current bet by an amount</string>
+    <string name="place_for_the_current_bet_amount_to_be_shown">Place for the current bet amount to be shown</string>
+    <string name="betAmount">0</string>
+    <string name="moneyAmount">0</string>
+</resources>

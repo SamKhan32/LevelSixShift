@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/stay_night_background"
+    >
+
+    <ImageView
+        android:id="@+id/imgMoney"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/space_for_the_number_of_current_dollars_to_be_shown"
+        android:src="@drawable/money_space"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHelp"
+        app:layout_constraintHorizontal_bias="0.509"
+
+        app:layout_constraintStart_toEndOf="@+id/btnExit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/exit_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnHelp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/help_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/help"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="113dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/your_chosen_presenter_for_the_slot_machine"
+        android:src="@drawable/avatar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgSlotMachineHolder"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <ImageView
+        android:id="@+id/imgSlotMachineHolder"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/the_slot_machine"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        app:srcCompat="@drawable/slot_machine_holder" />
+
+
+    <ImageButton
+        android:id="@+id/btnMinus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/detracts_from_the_current_bet_by_an_amount"
+        app:layout_constraintEnd_toStartOf="@+id/btnSpin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlotMachineHolder"
+        app:srcCompat="@drawable/minus" />
+
+    <ImageButton
+        android:id="@+id/btnSpin"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:enabled="true"
+        android:contentDescription="@string/spins_the_slot_machine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlotMachineHolder"
+        app:layout_constraintVertical_bias="0.746"
+        app:srcCompat="@drawable/spin" />
+
+    <ImageButton
+        android:id="@+id/btnPlus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="240dp"
+        android:contentDescription="@string/adds_to_the_current_bet_by_an_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSpin"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlotMachineHolder"
+        app:srcCompat="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/imgBetHolder"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/place_for_the_current_bet_amount_to_be_shown"
+        app:layout_constraintBottom_toTopOf="@+id/btnSpin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlotMachineHolder"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bet_holder"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtBetAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/betAmount"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSpin"
+        app:layout_constraintEnd_toEndOf="@+id/imgBetHolder"
+        app:layout_constraintStart_toStartOf="@+id/imgBetHolder"
+        app:layout_constraintTop_toTopOf="@+id/imgBetHolder" />
+
+    <TextView
+        android:id="@+id/txtMoneyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moneyAmount"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMoney"
+        app:layout_constraintEnd_toEndOf="@+id/imgMoney"
+        app:layout_constraintTop_toTopOf="@+id/imgMoney" />
+
+    <LinearLayout
+        android:id="@+id/slotMachineLayout"
+        android:layout_width="485dp"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSlotMachineHolder"
+        app:layout_constraintEnd_toEndOf="@+id/imgSlotMachineHolder"
+        app:layout_constraintStart_toStartOf="@+id/imgSlotMachineHolder"
+        app:layout_constraintTop_toTopOf="@+id/imgSlotMachineHolder">
+
+        <ImageView
+            android:id="@id/reelOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@id/reel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@id/reel3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@id/reel4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@id/reel5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bar"
+            android:scaleType="centerInside" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

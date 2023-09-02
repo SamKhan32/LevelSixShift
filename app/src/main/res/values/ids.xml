@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="image1" type="id" />
+    <item name="reelOne" type="id" />
+    <item name="reel2" type="id" />
+    <item name="reel3" type="id" />
+    <item name="reel4" type="id" />
+    <item name="reel5" type="id" />
+</resources>
